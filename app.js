@@ -1,12 +1,6 @@
 const timer = document.querySelector(".timer");
-const key = document.querySelector(".key");
-
-document.addEventListener("keydown", (e) => {
-  console.log(e);
-});
 
 const starter = function () {
-  // send request
   const formData = new FormData();
   formData.append("test", new File(["1"], "test.txt", { type: "text/plain" }));
   fetch(
